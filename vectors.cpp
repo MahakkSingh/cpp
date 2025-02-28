@@ -66,4 +66,19 @@
 
 
 #include <iostream>
-#include <vector> //this is the library
+#include <vector> //this is the library for vectors
+using namespace std;
+
+int main(){
+    vector<int> vec; // this vector is empty
+    
+    vec.push_back(20);
+    vec.push_back(25);
+
+    cout << "after push back size= " << vec.size() << endl;  
+    for (int i : vec){
+        cout << "elements in vector = " << i << endl;
+    }
+
+    return 0;
+}
