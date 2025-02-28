@@ -56,7 +56,7 @@
 // {
 //     vector<char> vec{'a', 'b', 'c', 'd', 'e'}; // this vector is empty
 //     cout <<"size = " << vec.size() << endl;
-    
+
 //     for (char val : vec)
 //     {
 //         cout << val << endl;
@@ -64,21 +64,58 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <vector> //this is the library for vectors
+// using namespace std;
+
+// int main(){
+//     vector<int> vec; // this vector is empty
+
+//     vec.push_back(20);
+//     vec.push_back(25);
+//     vec.push_back(86);
+//     vec.push_back(72);
+
+//     cout << "after push back size= " << vec.size() << endl;
+
+//     // vec.pop_back(); // will dlt 25
+//     for (int i : vec){
+//         cout << i << endl;
+//     }
+
+//     cout << vec.front() << " ";
+//     cout << vec.back() << " ";
+//     cout << vec.at(1) << " ";
+
+//     return 0;
+// }
 
 #include <iostream>
 #include <vector> //this is the library for vectors
 using namespace std;
 
-int main(){
+int main()
+{
     vector<int> vec; // this vector is empty
-    
+
     vec.push_back(20);
     vec.push_back(25);
+    vec.push_back(86);
+    vec.push_back(72);
+    vec.push_back(83);
 
-    cout << "after push back size= " << vec.size() << endl;  
-    for (int i : vec){
-        cout << "elements in vector = " << i << endl;
-    }
+    cout << "the size of the vector is " << vec.size() << endl;
+    cout << "the capacity of the vector is " << vec.capacity() << endl;
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
